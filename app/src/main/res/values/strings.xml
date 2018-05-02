@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shumanator Music Player</string>
+
+    <string name="main_instruction">Pick the category to play</string>
+    <!--music catgories-->
+    <string name="jazz">Jazz</string>
+    <string name="rocknroll">Rock n Roll</string>
+    <string name="reggae">Reggae</string>
+    <string name="rap_hiphop">Rap/Hip Hop</string>
+    <string name="pop">Pop</string>
+    <string name="surprise_me">Surprise Me!</string>
+    <string name="now_playing">Now Playing</string>
+
+    <string name="song_name">Song Name</string>
+    <string name="artist">Artist</string>
+    <string name="song_category">Category</string>
+    <string name="duration">Duration</string>
+
+    <string name="play_button">PLAY</string>
+    <string name="stop_button">STOP</string>
+
+</resources>

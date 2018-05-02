@@ -1,0 +1,4 @@
+#Mon Feb 26 11:19:37 GMT 2018
+base.0=/Users/fatoumeh/AndroidStudioProjects/ShumanatorMusicPlayer/app/build/intermediates/transforms/dexMerger/debug/7
+path.0=classes.dex
+renamed.0=classes.dex

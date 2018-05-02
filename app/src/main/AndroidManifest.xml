@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fatoumeh.shumanatormusicplayer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".JazzActivity"
+            android:label="@string/jazz"
+            android:parentActivityName=".MainActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivity" />
+        </activity>
+
+        <!--Not providing a parent here because any of the activities
+            below could start this one. so i'm handling it programmatically -->
+        <activity
+            android:name=".MusicPlayerActivity"
+            android:label="@string/now_playing" />
+
+        <activity android:name=".RocknRollActivity"
+            android:label="@string/rocknroll"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".ReggaeActivity"
+            android:label="@string/reggae"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".RapHipHopActivity"
+            android:label="@string/rap_hiphop"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".PopActivity"
+            android:label="@string/pop"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".SurpriseMeActivity"
+            android:label="@string/surprise_me"
+            android:parentActivityName=".MainActivity"/>
+    </application>
+
+</manifest>

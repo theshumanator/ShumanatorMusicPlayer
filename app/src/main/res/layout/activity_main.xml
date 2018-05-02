@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fatoumeh.shumanatormusicplayer.MainActivity">
+
+    <TextView
+        android:id="@+id/main_instruction"
+        android:text="@string/main_instruction"
+        style="@style/mainInstructions"/>
+
+    <Button
+        android:id="@+id/buttonJazz"
+        android:text="@string/jazz"
+        style="@style/leftCategory"
+        app:layout_constraintTop_toBottomOf="@id/initialHorizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/firstHorizontalGuideline" />
+
+
+    <Button
+        android:id="@+id/buttonRocknroll"
+        android:text="@string/rocknroll"
+        style="@style/rightCategory"
+        app:layout_constraintTop_toBottomOf="@id/initialHorizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/firstHorizontalGuideline" />
+
+    <Button
+        android:id="@+id/buttonReggae"
+        android:text="@string/reggae"
+        style="@style/leftCategory"
+        app:layout_constraintTop_toBottomOf="@id/firstHorizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/secondHorizontalGuideline"/>
+
+
+    <Button
+        android:id="@+id/buttonRapHiphop"
+        android:text="@string/rap_hiphop"
+        style="@style/rightCategory"
+        app:layout_constraintTop_toBottomOf="@id/firstHorizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/secondHorizontalGuideline"/>
+
+
+    <Button
+        android:id="@+id/buttonPop"
+        android:text="@string/pop"
+        style="@style/leftCategory"
+        app:layout_constraintTop_toBottomOf="@id/secondHorizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/thirdHorizontalGuideline"/>
+
+
+    <Button
+        android:id="@+id/buttonSurpise"
+        android:text="@string/surprise_me"
+        style="@style/rightCategory"
+        app:layout_constraintTop_toBottomOf="@id/secondHorizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/thirdHorizontalGuideline" />
+
+
+    <ImageView
+        style="@style/leftCategory"
+        android:src="@drawable/sax"
+        app:layout_constraintTop_toBottomOf="@id/thirdHorizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/fourthHorizontalGuideline" />
+
+    <ImageView
+        style="@style/rightCategory"
+        android:src="@drawable/runningnote"
+        app:layout_constraintTop_toBottomOf="@id/thirdHorizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/fourthHorizontalGuideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightVerticalGuideLine"
+        style="@style/verticalGLStyle"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftVerticalGuideLine"
+        style="@style/verticalGLStyle"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/initialHorizontalGuideline"
+        style="@style/horizontalGLStyle"
+        app:layout_constraintGuide_percent="0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/firstHorizontalGuideline"
+        style="@style/horizontalGLStyle"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/secondHorizontalGuideline"
+        style="@style/horizontalGLStyle"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/thirdHorizontalGuideline"
+        style="@style/horizontalGLStyle"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/fourthHorizontalGuideline"
+        style="@style/horizontalGLStyle"
+        app:layout_constraintGuide_percent="1.0" />
+
+</android.support.constraint.ConstraintLayout>
+
